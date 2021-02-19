@@ -117,7 +117,7 @@ class Machine:
         g.edge('r1', 'r1', '(t,t,-1) t in {0,1,S,X,M}')
         g.edge('q1', 'q1', '(t,t,1) t in {0,1,S,X,Lambda}')
         g.edge('fe', 'fe', '(t,t,-1) t in {S,X}')
-        g.render("Comparer.gv", view=True)
+        g.render("Comparator.gv", view=True)
 
 
 
