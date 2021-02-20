@@ -1,0 +1,100 @@
+digraph Adder {
+	q0 [color=green shape=doublecircle]
+	gr
+	r
+	rg
+	rg1
+	rg0
+	rg11
+	rg00
+	gl
+	l
+	lg
+	lg1
+	lg0
+	lg11
+	lg00
+	lg0p
+	lg1p
+	lp
+	lpp
+	rf
+	ff
+	ff0
+	ff1
+	f1
+	f [color=red shape=parallelogram]
+	"0_check_R"
+	"1_check_R"
+	R_set_1
+	R_set_0
+	"0_CR"
+	"1_CR"
+	q0 -> gr [label="(S,S,1)"]
+	gr -> r [label="(M,M,1)"]
+	r -> r [label="(1,1,1)"]
+	r -> r [label="(0,0,1)"]
+	r -> rg [label="(Lambda,Lambda,-1)"]
+	r -> rg [label="(X,X,-1)"]
+	rg -> rg1 [label="(1,X,-1)"]
+	rg -> rg0 [label="(0,X,-1)"]
+	rg0 -> rg00 [label="(Lambda,Lambda,-1)"]
+	rg1 -> rg11 [label="(Lambda,Lambda,-1)"]
+	rg00 -> "0_check_R" [label="(Lambda,0,-1)"]
+	rg11 -> "1_check_R" [label="(Lambda,1,-1)"]
+	"0_check_R" -> "0_CR" [label="(R,R,-1)"]
+	"1_check_R" -> "1_CR" [label="(R,R,-1)"]
+	"0_CR" -> gl [label="(0,0,1)"]
+	"1_CR" -> gl [label="(0,0,1)"]
+	"0_CR" -> R_set_1 [label="(1,0,1)"]
+	"1_CR" -> R_set_0 [label="(1,1,1)"]
+	R_set_0 -> gl [label="(0,0,1)"]
+	R_set_1 -> gl [label="(0,1,1)"]
+	R_set_0 -> gl [label="(1,0,1)"]
+	R_set_1 -> gl [label="(1,1,1)"]
+	rg00 -> gl [label="(P,1,1)"]
+	gl -> l [label="(S,S,1)"]
+	l -> lg [label="(M,M,-1)"]
+	l -> lg [label="(X,X,-1)"]
+	lg -> lg1 [label="(1,X,-1)"]
+	lg -> lg0 [label="(0,X,-1)"]
+	lg1 -> lg11 [label="(Lambda,Lambda,-1)"]
+	lg0 -> lg00 [label="(Lambda,Lambda,-1)"]
+	lg00 -> lg0p [label="(Lambda,Lambda,1)"]
+	lg11 -> lg1p [label="(Lambda,Lambda,1)"]
+	lg0p -> q0 [label="(0,0,1)"]
+	lg1p -> q0 [label="(0,1,1)"]
+	lg0p -> q0 [label="(1,1,1)"]
+	lg1p -> lp [label="(1,0,-1)"]
+	lp -> lp [label="(Lambda,Lambda,-1)"]
+	lp -> lpp [label="(R,R,-1)"]
+	lpp -> q0 [label="(0,1,1)"]
+	rg -> rf [label="(M,M,-1)"]
+	rf -> ff [label="(R,R,-1)"]
+	ff -> ff0 [label="(0,0,1)"]
+	ff -> ff1 [label="(1,0,1)"]
+	ff0 -> f [label="(0,0,0)"]
+	ff0 -> f [label="(1,1,0)"]
+	ff1 -> f1 [label="(0,0,-1)"]
+	f1 -> f [label="(Lambda,1,0)"]
+	ff1 -> f1 [label="(1,1,-1)"]
+	rf -> rf [label="(t,t,-1) t in {0,1,X,S,Lambda}"]
+	rg1 -> rg1 [label="(t,t,-1) t in {0,1,X,S,M}"]
+	rg0 -> rg0 [label="(t,t,-1) t in {0,1,X,S,M}"]
+	gr -> gr [label="(t,t,1) t in {0,1,X}"]
+	q0 -> q0 [label="(t,t,1) t in {0,1,R,Lambda}"]
+	ff1 -> ff1 [label="(t,t,1) t in {R,Lambda}"]
+	ff0 -> ff0 [label="(t,t,1) t in {R,Lambda}"]
+	rg00 -> rg00 [label="(t,t,-1) t in {0,1}"]
+	rg11 -> rg11 [label="(t,t,-1) t in {0,1}"]
+	"0_check_R" -> "0_check_R" [label="(t,t,-1) t in {0,1,Lambda}"]
+	"1_check_R" -> "1_check_R" [label="(t,t,-1) t in {0,1,Lambda}"]
+	R_set_0 -> R_set_0 [label="(t,t,1) t in {R,Lambda}"]
+	R_set_1 -> R_set_1 [label="(t,t,1) t in {R,Lambda}"]
+	gl -> gl [label="(t,t,1) t in {0,1,R,Lambda}"]
+	l -> l [label="(t,t,1) t in {0,1}"]
+	lg0 -> lg0 [label="(t,t,-1) t in {0,1,S}"]
+	lg1 -> lg1 [label="(t,t,-1) t in {0,1,S}"]
+	lg00 -> lg00 [label="(t,t,-1) t in {0,1}"]
+	lg11 -> lg11 [label="(t,t,-1) t in {0,1}"]
+}
