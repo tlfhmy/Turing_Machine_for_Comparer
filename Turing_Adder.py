@@ -1,9 +1,9 @@
 from graphviz import Digraph
 
 """
-...Lambda Lambda Lambda..Lambda Lambda S  b  b  b  b  b ... b M b b b b ... b Lambda Lambda Lambda...  ->   the tape
-                        |              |       |              |           |
-                   result bits       init   first number     sep    second number
+...Lambda Lambda b R......Lambda Lambda Lambda S  b  b  b  b  b ... b M b b b b ... b Lambda Lambda Lambda...  ->   the tape
+                  |             |              |       |              |           |
+              overflow      result bits       init   first number     sep    second number
 """
 
 
@@ -168,12 +168,12 @@ class Machine:
             # print(self.tape)
             self.tape[last_position] = Pointor.trans(self.tape[Pointor.position])
             if Pointor.status == self.final_status:
-                res = []
+                res_temp = []
                 i = Pointor.position
                 while self.tape[i] != "Lambda":
-                    res.append(self.tape[i])
+                    res_temp.append(self.tape[i])
                     i += 1
-                return res
+                return res_temp
 
     def generGraph(self):
         g = Digraph("Adder")
