@@ -99,7 +99,7 @@ class Machine:
                      (('1', 'R_set_0'), ('0', 'gl', 1)), (('1', 'R_set_1'), ('1', 'gl', 1))])
 
         prog.extend([(('0', 'rg00'), ('0', 'rg00', -1)), (('1', 'rg00'), ('1', 'rg00', -1)),
-                     (('P', 'rg00'), ('1', 'gl', 1))])
+                     (('R', 'rg00'), ('1', 'gl', 1))])
 
         # Go back to the initial position and prepare to get the corresponding bit in the first number
         for p in ['0', '1', 'Lambda', 'R']:
@@ -218,7 +218,7 @@ class Machine:
 
 
 tst = Machine(32)
-m, n = 123223, 43234
+m, n = 122233, 34221
 tst.set_numbers(m, n)
 print(tst.tape)
 # print(len(tst.tape))

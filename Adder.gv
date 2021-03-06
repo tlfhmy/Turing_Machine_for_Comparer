@@ -52,7 +52,7 @@ digraph Adder {
 	R_set_1 -> gl [label="(0,1,1)"]
 	R_set_0 -> gl [label="(1,0,1)"]
 	R_set_1 -> gl [label="(1,1,1)"]
-	rg00 -> gl [label="(P,1,1)"]
+	rg00 -> gl [label="(R,1,1)"]
 	gl -> l [label="(S,S,1)"]
 	l -> lg [label="(M,M,-1)"]
 	l -> lg [label="(X,X,-1)"]
