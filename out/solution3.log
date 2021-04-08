@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.6)  8 MAR 2021 11:45
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.6)  9 MAR 2021 16:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**solution2.tex
-(./solution2.tex
+**solution3.tex
+(./solution3.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -235,8 +235,8 @@ File: l3backend-xetex.def 2021-03-02 L3 backend support: XeTeX
 LaTeX Warning: Unused global option(s):
     [a4papper].
 
-(/Users/tanglin/Github/Turing_Machine_for_Comparer/out/solution2.aux)
-\openout1 = `solution2.aux'.
+(/Users/tanglin/Github/Turing_Machine_for_Comparer/out/solution3.aux)
+\openout1 = `solution3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -279,374 +279,200 @@ ge
 with kernel methods
 ))
 \c@lstlisting=\count282
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 20
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 22
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 52--53
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[1
-
-]
-./solution2.tex:96: Missing $ inserted.
+./solution3.tex:36: Missing $ inserted.
 <inserted text> 
                 $
-l.96 
-     
+l.36             \Lambda
+                         & Program & \# & Status & \# & Input & \# & Output ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./solution2.tex:96: Missing } inserted.
-<inserted text> 
-                }
-l.96 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./solution2.tex:96: Display math should end with $$.
-<to be read again> 
-                   \@@par 
-l.96 
-     
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-./solution2.tex:96: Extra }, or forgotten \endgroup.
-\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.96 
-     
+./solution3.tex:36: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.36             \Lambda &
+                           Program & \# & Status & \# & Input & \# & Output ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-
-./solution2.tex:97: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97     \]
-           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./solution2.tex:97: Missing $ inserted.
+./solution3.tex:36: Missing $ inserted.
 <inserted text> 
                 $
-l.97     \]
-           
+l.36             \Lambda &
+                           Program & \# & Status & \# & Input & \# & Output ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./solution3.tex:36: Missing } inserted.
+<inserted text> 
+                }
+l.36             \Lambda &
+                           Program & \# & Status & \# & Input & \# & Output ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./solution2.tex:97: Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.97     \]
-           
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
+./solution3.tex:36: Missing $ inserted.
+<inserted text> 
+                $
+l.36 ...tatus & \# & Input & \# & Output & \Lambda
+                                                   \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./solution3.tex:37: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.37             \hline
+                       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./solution3.tex:37: Missing $ inserted.
+<inserted text> 
+                $
+l.37             \hline
+                       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./solution3.tex:37: Missing } inserted.
+<inserted text> 
+                }
+l.37             \hline
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--107
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--116
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+
+ []
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--116
-
+Overfull \hbox (5.74397pt too wide) detected at line 104
+[]
  []
 
 
-./solution2.tex:118: LaTeX Error: There's no line here to end.
+./solution3.tex:112: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118     T
-           he proof for this problem is similar to the first problem.
+l.112     \\
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
-
- []
-
-
-Overfull \hbox (111.00464pt too wide) in paragraph at lines 127--128
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (63.00415pt too wide) in paragraph at lines 129--130
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (135.00488pt too wide) in paragraph at lines 130--131
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 131--132
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (105.00458pt too wide) in paragraph at lines 137--138
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 138--139
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 145--146
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (99.00452pt too wide) in paragraph at lines 151--152
-[][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (87.0044pt too wide) in paragraph at lines 152--153
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 153--154
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (105.00458pt too wide) in paragraph at lines 165--166
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[3]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 173--174
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 200--201
-[][][][][][][][][][][] 
- []
-
-[4]
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 224--225
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 234--235
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 246--247
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[5]
-File: Tree.gv.pdf Graphic file (type pdf)
-<use Tree.gv.pdf>
-File: Tree.gv.pdf Graphic file (type pdf)
-<use Tree.gv.pdf>
-
-
-./solution2.tex:273: Package keyval Error: postcommand undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.273     \includepdf{Tree.gv.pdf}
-                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: Tree.gv.pdf Graphic file (type pdf)
-<use Tree.gv.pdf, page 1>
-
-./solution2.tex:273: Package keyval Error: postcommand undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.273     \includepdf{Tree.gv.pdf}
-                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: Tree.gv.pdf Graphic file (type pdf)
-<use Tree.gv.pdf, page 1>
-[6]
-
-./solution2.tex:273: Package keyval Error: postcommand undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.273     \includepdf{Tree.gv.pdf}
-                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: Tree.gv.pdf Graphic file (type pdf)
-<use Tree.gv.pdf, page 1>
-
-./solution2.tex:273: Package keyval Error: postcommand undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.273     \includepdf{Tree.gv.pdf}
-                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: Tree.gv.pdf Graphic file (type pdf)
-<use Tree.gv.pdf, page 1>
-./solution2.tex:273: Undefined control sequence.
-<argument> \undefinedpagestyle 
-                               
-l.273     \includepdf{Tree.gv.pdf}
-                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./solution2.tex:273: Package keyval Error: postcommand undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.273     \includepdf{Tree.gv.pdf}
-                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: Tree.gv.pdf Graphic file (type pdf)
-<use Tree.gv.pdf, page 1>
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 275--282
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--290
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--295
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--299
-
- []
-
-
-./solution2.tex:300: LaTeX Error: There's no line here to end.
+./solution3.tex:113: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.300     \\ T
-              he second solution: \\
+l.113 
+      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 114--117
 
  []
 
-[8] (/Users/tanglin/Github/Turing_Machine_for_Comparer/out/solution2.aux) ) 
+
+./solution3.tex:119: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119     S
+           olution: \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--137
+
+ []
+
+[2] [3] (/Users/tanglin/Github/Turing_Machine_for_Comparer/out/solution3.aux) )
+ 
 Here is how much of TeX's memory you used:
- 4659 strings out of 476939
- 66693 string characters out of 5822581
- 427776 words of memory out of 5000000
- 24589 multiletter control sequences out of 15000+600000
+ 4643 strings out of 476939
+ 66459 string characters out of 5822581
+ 380768 words of memory out of 5000000
+ 24576 multiletter control sequences out of 15000+600000
  405664 words of font info for 43 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 83i,17n,88p,274b,1412s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,11n,88p,274b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/tanglin/Github/Turing_Machine_for_Comparer/out/solutio
-n2.pdf (8 pages).
+n3.pdf (3 pages).

@@ -1,0 +1,126 @@
+\documentclass[a4papper]{article}
+
+\usepackage[final]{pdfpages}
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath, amsthm, mathrsfs}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{amsfonts}
+\newtheoremstyle{neosn}{0.5\topsep}{0.5\topsep}{\rm}{}{\sc}{.}{ }{\thmname{#1}\thmnumber{ #2}\thmnote{ {\mdseries#3}}}
+\theoremstyle{neosn}
+\newtheorem{problem}{Problem}
+
+\begin{document}
+    \begin{center}
+    {\bf Homework 3} \\
+        \today \\
+        TangLin
+    \end{center}
+
+    \problem{Construct formula of language $(+,0,1,=)$ whose length is $O(\log n)$ with free variable $x$ for any
+        natural number $n$, and it is true in Module $(\mathbb{N}, +, 0, 1)$ if and only if $x = n$.}
+    \\
+
+    Solution: \\
+
+    \\
+    Let the formula which we want to build be $R_n(x)$.
+    We can build it inductively.
+    First, let
+    \[
+        R_0(x) = (x=0)
+    \]
+    then, for any natural number $n \leqslant 1$,
+    \[
+        R_n(y) = \begin{cases}
+                     \exists x \left(R_{\frac{n}{2}}(x) \land y=x+x\right), & \text{if } n \text{ is even number.} \\
+                     \exists x \left(R_{n-1}(x) \land y=x+1\right), & \text{if } n \text{ is odd number.}
+                 \end{cases}
+    \]
+
+    Obviously, it is true for all natural number $n$
+    \[
+        R_n(x) = 1 \Leftrightarrow x=n.
+    \]
+    Now we need to analyse its number of symbols.
+    We use function $l(R)$ to indicate the number of symbols of formula $R$.
+    $l(R_1(x)) = 5$, when $n=0$; $l(R_n(x)) = l(R_{\text{previous}}(x)) + 10$ when $n$ is odd or even.
+    So, we can get the relation
+    \[
+        \begin{array}{ll}
+            l(R_n(x)) &= l(R_{\lfloor \frac{n}{2} \rfloor}(x)) + 10 \\
+                        &= l(R_{\lfloor \frac{n}{2^2} \rfloor}(x)) + 2 \cdot 10 \\
+                        & = l(R_{\lfloor \frac{n}{2^3} \rfloor}(x)) + 3 \cdot 10 \\
+                        & = \cdots \\
+                        & = l(R_0(x)) + (\log n + 1)\cdot 10 \\
+                        & = 10 \log n + 15 \in O(\log n).
+        \end{array}
+    \]
+    So, we design a formula $R_n(x)$ with number of symbols $O(\log n)$ which can decide $x = n$ and
+    the number of variables are $O(1)$.
+    \\
+
+    \problem{Construct formula of language $(+,0,1,=)$ whose length is $O(n)$ with three free variables
+    $x,y,z$, and it is true in Module $(\mathbb{N}, +, 0, 1, =)$ if and only if $x = y \cdot z$ and $y < 2^n$.}
+
+    \\
+
+    Solution: \\
+
+    Let the formula which we want to find be $P_n(x,y,z)$.
+    We can also build it inductively.
+    First, let
+    \[
+        P_0(x,y,z) = (y=0 \land z = 0) \lor (y=1 \land z=x).
+    \]
+    Then we are building the inductive part.\\
+    Because we have the limiting condition $y < 2^n$, so we have to design the recursive
+    process from $n$ to $n+1$ such that $y$ satisfies corresponding condition.
+    We can do it, let
+    \[
+        y = y_1 + y_2 + 1
+    \]
+    where $y<2^{n+1})$ and $y_1, y_2 < 2^n$.
+    So the maximum of $y+1$ is
+    \[
+        1+y = y_1 + y_2 + 1+1 = 2^n-1+2^n-1+2 = 2^{n+1}
+    \]
+    i.e. $y$ has maximum $2^{n+1} -1$, it satisfies our requirement.
+    For any $z$, we have $zy = z(y_1+y_2+1) = zy_1+zy_2+z$.
+    Then we build the inductive formula,
+    \[
+        P_{n+1}(x,y,z) = \exists y_1, y_2, r, s \left(y = y_1+y_2+1 \land x = r+s+z
+        \land P_n(r,y_1,z) \land P_n(s,y_2,z)\right)
+    \]
+    But there are two $P_n$ occurrences, and the total length will be the exponential of $n$.
+    So we have to do some transformation.
+    \[
+        \begin{array}{ll}
+
+            P_{n+1}(x,y,z) = & \exists y_1, y_2, r, s \Big{(} y = y_1+y_2+1 \land x = r+s+z \land \\
+            & \land \forall t \exists u (t=y_1 \land u = r) \lor (t=y_2 \land u=s) \to P_n(u,t,z) \Big{)}
+        \end{array}
+    \]
+    Now we analyse the number of symbols of formula $P_n(x,y,z)$.
+    We use notation $l(P_n)$ to indicate the number of symbols of $P_n$.
+    \[
+        l(P_0(x,y,z)) = 19
+    \]
+    then for any $n>=1$,
+    \[
+        l(P_n(x,y,z)) = l(P_{n-1}(x,y,z)) + 50
+    \]
+    So
+    \[
+        l(P_n(x,y,z)) = 19+50n \in O(n).
+    \]
+
+    We have built the formula which satisfies the condition with 9 variables.
+    \\
+
+
+
+
+
+\end{document}
